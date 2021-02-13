@@ -2,12 +2,14 @@ module.exports = {
   base: '/phoenix-vue-library/',
   locales: {
     '/': {
+      base: '/phoenix-vue-library/',
       lang: 'en-US',
       title: '🔥🦅 Phoenix Component Library',
       description: 'Documentation site for the Phoenix component library plugin'
     }
   },
   themeConfig: {
+    base: '/phoenix-vue-library/',
     repoLabel: 'Contribute!',
     repo: 'https://github.com/comparaja/phoenix-vue-library',
     docsDir: 'docs',
