@@ -14,6 +14,8 @@ cd docs/.vuepress/dist
 
 git init
 git add -A
+git config --local user.email "action@github.com"
+git config --local user.name "GitHub Action"
 git commit -m 'deploy'
 
 git push -f git@github.com:comparaja/phoenix-vue-library.git master:gh-pages
