@@ -1,6 +1,6 @@
 module.exports = {
   locales: {
-    '/': {
+    '/phoenix-vue-library/': {
       lang: 'en-US',
       title: '🔥🦅 Phoenix Component Library',
       description: 'Documentation site for the Phoenix component library plugin'
