@@ -11,7 +11,7 @@ on:
     branches: [ master ]
 
   # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch: true
+  workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -26,7 +26,7 @@ jobs:
       - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
-      - name: Deploy GithubPages
+      - name: Deploy Github Pages
         run: |
           echo Deploying Vuepress Docs
           ./deploy.sh
