@@ -39,7 +39,7 @@ jobs:
           git init
       
       - name: Commit & Push
-        uses: actions-js/pusgithub_tokenh@v1.2
+        uses: actions-js/push@v1.2
         with:
           github_token: ${{ secrets.GH_TOKEN }}
           branch: master:gh-pages
