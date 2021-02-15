@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Deploy VUepress Docs
+name: Deploy Vuepress Docs
 
 # Controls when the action will run. 
 on:
@@ -25,8 +25,23 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      # Runs a single command using the runners shell
-      - name: Deploy Github Pages
+      - name: Install NPM project
         run: |
-          echo Deploying Vuepress Docs
-          ./deploy.sh
+          set -e
+          npm install
+          
+      - name: Build Vuepress Docs
+        run : npm run docs:build
+      
+      - name: Commit changes
+        run: |
+          cd docs/.vuepress/dist
+          
+      - name: Add & Commit
+        # You may pin to the exact commit or the version.
+        # uses: EndBug/add-and-commit@b3c7c1e078a023d75fb0bd326e02962575ce0519
+        uses: EndBug/add-and-commit@v7.0.0
+        with:
+          add: -A
+          message: 'automated deploy'
+          push: -f git@github.com:comparaja/phoenix-vue-library.git master:gh-pages
