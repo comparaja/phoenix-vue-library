@@ -1,5 +1,7 @@
 # phoenix-vue-library
 
+[![Deploy Vuepress Docs](https://github.com/comparaja/phoenix-vue-library/actions/workflows/deployVuepressDocs.yml/badge.svg)](https://github.com/comparaja/phoenix-vue-library/actions/workflows/deployVuepressDocs.yml)
+
 ## Project setup
 ```
 npm install
