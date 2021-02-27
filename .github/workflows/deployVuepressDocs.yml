@@ -32,6 +32,11 @@ jobs:
           
       - name: Build Vuepress Docs
         run : npm run docs:build
+        
+      - name: Setup git config
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
       
       - name: Commit docs
         run: |
