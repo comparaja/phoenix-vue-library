@@ -24,6 +24,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+        with:
+          token: ${secrets.REPO_TOKEN}
 
       - name: Install NPM project
         run: |
@@ -38,13 +40,12 @@ jobs:
           cd docs/.vuepress/dist
           git init
           git add -A
-          git config --local user.email "diogo.carlos@comparaja.pt"
-          git config --local user.name "DigasMC"
           git commit -m "Deploy Vuepress to Github Pages"
           
           
       - name: Push
-        run: git push -f git@github.com:comparaja/phoenix-vue-library.git master:gh-pages
+        run: |
+          git push -f git@github.com:comparaja/phoenix-vue-library.git master:gh-pages
           
           
       
