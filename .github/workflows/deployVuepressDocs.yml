@@ -24,8 +24,6 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-        with:
-          token: ${secrets.REPO_TOKEN}
 
       - name: Install NPM project
         run: |
@@ -45,7 +43,7 @@ jobs:
           
       - name: Push
         run: |
-          git push -f git@github.com:comparaja/phoenix-vue-library.git master:gh-pages
+          git push -f origin master:gh-pages
           
           
       
