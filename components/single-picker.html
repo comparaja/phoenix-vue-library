@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Single Picker | 🔥🦅 Phoenix Component Library</title>
+    <meta name="generator" content="VuePress 1.8.1">
+    
+    <meta name="description" content="Documentation site for the Phoenix component library plugin">
+    
+    <link rel="preload" href="/phoenix-vue-library/assets/css/0.styles.6914d1da.css" as="style"><link rel="preload" href="/phoenix-vue-library/assets/js/app.474aab61.js" as="script"><link rel="preload" href="/phoenix-vue-library/assets/js/2.f2f3b0a2.js" as="script"><link rel="preload" href="/phoenix-vue-library/assets/js/12.c8d79b58.js" as="script"><link rel="preload" href="/phoenix-vue-library/assets/js/3.ac6448c4.js" as="script"><link rel="preload" href="/phoenix-vue-library/assets/js/4.ce52159a.js" as="script"><link rel="preload" href="/phoenix-vue-library/assets/js/8.3a76a952.js" as="script"><link rel="prefetch" href="/phoenix-vue-library/assets/js/10.2e7ab244.js"><link rel="prefetch" href="/phoenix-vue-library/assets/js/11.5bb43a29.js"><link rel="prefetch" href="/phoenix-vue-library/assets/js/13.7d9dc262.js"><link rel="prefetch" href="/phoenix-vue-library/assets/js/5.641979ca.js"><link rel="prefetch" href="/phoenix-vue-library/assets/js/6.ea77e5a3.js"><link rel="prefetch" href="/phoenix-vue-library/assets/js/7.426cccd1.js"><link rel="prefetch" href="/phoenix-vue-library/assets/js/9.f6052a00.js">
+    <link rel="stylesheet" href="/phoenix-vue-library/assets/css/0.styles.6914d1da.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/phoenix-vue-library/" class="home-link router-link-active"><!----> <span class="site-name">🔥🦅 Phoenix Component Library</span></a> <div class="links"><!----> <nav class="nav-links can-hide"><div class="nav-item"><a href="/phoenix-vue-library/guide.html" class="nav-link">
+  Getting Started
+</a></div><div class="nav-item"><a href="/phoenix-vue-library/components/" class="nav-link router-link-active">
+  Components
+</a></div><div class="nav-item"><a href="https://github.com/comparaja/phoenix-vue-library" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/comparaja/phoenix-vue-library" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Contribute!
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/phoenix-vue-library/guide.html" class="nav-link">
+  Getting Started
+</a></div><div class="nav-item"><a href="/phoenix-vue-library/components/" class="nav-link router-link-active">
+  Components
+</a></div><div class="nav-item"><a href="https://github.com/comparaja/phoenix-vue-library" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/comparaja/phoenix-vue-library" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Contribute!
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Components</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/phoenix-vue-library/components/single-picker.html" aria-current="page" class="active sidebar-link">Single Picker</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/phoenix-vue-library/components/single-picker.html#example" class="sidebar-link">Example</a></li><li class="sidebar-sub-header"><a href="/phoenix-vue-library/components/single-picker.html#usage" class="sidebar-link">Usage</a></li><li class="sidebar-sub-header"><a href="/phoenix-vue-library/components/single-picker.html#props" class="sidebar-link">Props</a></li><li class="sidebar-sub-header"><a href="/phoenix-vue-library/components/single-picker.html#source-code" class="sidebar-link">Source code</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="single-picker"><a href="#single-picker" class="header-anchor">#</a> Single Picker</h1> <p>This component simulates the Select behaviour, maintaining a consistent appearance in all browsers</p> <h2 id="example"><a href="#example" class="header-anchor">#</a> Example</h2> <div class="demo" data-v-2a95ed70><div data-v-05259bd4 data-v-2a95ed70><div aria-haspopup="listbox" aria-labelledby="title137" id="sel137" class="single-picker" style="--single-picker-main-color:#076B9C;--single-picker-sec-color:#E6F1F9;" data-v-857f1e3a data-v-05259bd4><div class="toggler" data-v-857f1e3a><div id="title137" class="title" data-v-857f1e3a>
+      Single Picker Demo
+    </div> <div class="chevron" data-v-857f1e3a><svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-857f1e3a><path d="M1 1L6.5 6.5L12 1" stroke="#979290" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-v-857f1e3a></path></svg></div></div> <div role="listbox" id="sel-cont137" class="content" style="display:none;" data-v-857f1e3a data-v-857f1e3a><div class="label" data-v-857f1e3a>Single Picker Demo</div> <div role="option" class="option" data-v-857f1e3a><!----> <div class="title" data-v-857f1e3a>Option 1</div> <div class="right" data-v-857f1e3a><div class="radio-outter" data-v-857f1e3a><div class="radio-inner" data-v-857f1e3a></div></div></div></div><div role="option" class="option" data-v-857f1e3a><!----> <div class="title" data-v-857f1e3a>Option 2</div> <div class="right" data-v-857f1e3a><div class="radio-outter" data-v-857f1e3a><div class="radio-inner" data-v-857f1e3a></div></div></div></div><div role="option" class="option" data-v-857f1e3a><!----> <div class="title" data-v-857f1e3a>Option 3</div> <div class="right" data-v-857f1e3a><div class="radio-outter" data-v-857f1e3a><div class="radio-inner" data-v-857f1e3a></div></div></div></div></div></div> <div class="customize-section" data-v-05259bd4><p data-v-05259bd4><strong data-v-05259bd4>Customize</strong></p> <div class="customize-item" data-v-05259bd4><label for="responsive" data-v-05259bd4>Responsive</label> <input type="checkbox" name="responsive" id="responsive" data-v-05259bd4></div> <div class="customize-item" data-v-05259bd4><label for="required" data-v-05259bd4>Required</label> <input type="checkbox" name="required" id="required" data-v-05259bd4></div> <div class="customize-item" data-v-05259bd4><label for="color_main" data-v-05259bd4>Main color</label> <input type="color" name="color_main" id="color_main" value="#076B9C" data-v-05259bd4></div> <div class="customize-item" data-v-05259bd4><label for="color_secoundary" data-v-05259bd4>Secoundary color</label> <input type="color" name="color_secoundary" id="color_secoundary" value="#E6F1F9" data-v-05259bd4></div> <div class="customize-item" data-v-05259bd4><label for="label" data-v-05259bd4>Label</label> <input type="text" id="Label" value="Single Picker Demo" data-v-05259bd4></div></div></div></div> <h2 id="usage"><a href="#usage" class="header-anchor">#</a> Usage</h2> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>single-picker</span> <span class="token attr-name">responsive</span> <span class="token attr-name">required</span>
+  <span class="token attr-name">v-model</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>value<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name">:defaultValue</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>defaultValue<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name">:options</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>options<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name">:label</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">'</span>Label<span class="token punctuation">'</span><span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name">:color</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>color<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>single-picker</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="props"><a href="#props" class="header-anchor">#</a> Props</h2> <ul><li><p><strong>value</strong> <em>[Object]</em><br>
+The value assigned to the component.<br>
+Best usage with <em>v-model</em>.</p></li> <li><p><strong>responsive</strong> <em>[boolean]</em><br>
+When set to true, the component becomes fluid, occupying 100% of the parent.</p></li> <li><p><strong>required</strong> <em>[boolean]</em><br>
+When set to <em>true</em>, the component always returns a value (never gets <em>undefined</em>).</p></li> <li><p><strong>defaultValue</strong> <em>[Object]</em>
+The default value asssigned to the component.<br>
+Used when <em><strong>required</strong></em> is true.</p></li> <li><p><strong>options</strong> <em>[Array]</em><br>
+The options that appears in the dropdown as a list, there's no limit on the number of options.<br>
+Each option can have:</p> <ul><li><strong>title</strong> <em>[String]</em> <em><strong>required</strong></em></li> <li><strong>value</strong> <em>[Object]</em> <em><strong>required</strong></em></li> <li><strong>icon</strong> <em>[String]</em>  (<strong>eg.</strong> <em>fa fas-user</em>), requires an icon library.</li></ul></li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">let</span> options <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    title<span class="token operator">:</span> <span class="token string">'Option 1'</span><span class="token punctuation">,</span>
+    value<span class="token operator">:</span> <span class="token number">1</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    title<span class="token operator">:</span> <span class="token string">'Option 2'</span><span class="token punctuation">,</span>
+    value<span class="token operator">:</span> <span class="token number">2</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre></div><ul><li><p><strong>label</strong> <em>[String]</em><br>
+The title/label of the input.</p></li> <li><p><strong>color</strong> <em>[Object]</em><br>
+Customized colors for the component.</p></li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">let</span> colors <span class="token operator">=</span>  <span class="token punctuation">{</span>
+    main<span class="token operator">:</span> <span class="token string">&quot;#076B9C&quot;</span><span class="token punctuation">,</span>
+    secoundary<span class="token operator">:</span> <span class="token string">&quot;#E6F1F9&quot;</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><h2 id="source-code"><a href="#source-code" class="header-anchor">#</a> Source code</h2> <div><div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span>
+    <span class="token attr-name">aria-haspopup</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>listbox<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">:aria-labelledby</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">'</span>title<span class="token punctuation">'</span> + _uid<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">:id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">'</span>sel<span class="token punctuation">'</span> + _uid<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>single-picker<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">:class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>{ responsive: responsive }<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">:style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>cssProps<span class="token punctuation">&quot;</span></span>
+  <span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span>
+      <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>toggleContent()<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>toggler<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">:class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>{
+        active: showContent,
+        selected: selected.value !== undefined
+      }<span class="token punctuation">&quot;</span></span>
+    <span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">:id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">'</span>title<span class="token punctuation">'</span> + _uid<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>title<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        {{ selected.value !== undefined ? selected.title : label }}
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span>
+        <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>selected.value &amp;&amp; !required<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">@click.stop</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>clear()<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>cross<span class="token punctuation">&quot;</span></span>
+      <span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span>
+          <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>9<span class="token punctuation">&quot;</span></span>
+          <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>9<span class="token punctuation">&quot;</span></span>
+          <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>0 0 9 9<span class="token punctuation">&quot;</span></span>
+          <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>none<span class="token punctuation">&quot;</span></span>
+          <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>http://www.w3.org/2000/svg<span class="token punctuation">&quot;</span></span>
+        <span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span>
+            <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>M1 8L8 1<span class="token punctuation">&quot;</span></span>
+            <span class="token attr-name">stroke</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#979290<span class="token punctuation">&quot;</span></span>
+            <span class="token attr-name">stroke-width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2<span class="token punctuation">&quot;</span></span>
+            <span class="token attr-name">stroke-linecap</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>round<span class="token punctuation">&quot;</span></span>
+          <span class="token punctuation">/&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span>
+            <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>M8 8L1 1<span class="token punctuation">&quot;</span></span>
+            <span class="token attr-name">stroke</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#979290<span class="token punctuation">&quot;</span></span>
+            <span class="token attr-name">stroke-width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2<span class="token punctuation">&quot;</span></span>
+            <span class="token attr-name">stroke-linecap</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>round<span class="token punctuation">&quot;</span></span>
+          <span class="token punctuation">/&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-else</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>chevron<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>{ up: showContent }<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span>
+          <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>13<span class="token punctuation">&quot;</span></span>
+          <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>8<span class="token punctuation">&quot;</span></span>
+          <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>0 0 13 8<span class="token punctuation">&quot;</span></span>
+          <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>none<span class="token punctuation">&quot;</span></span>
+          <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>http://www.w3.org/2000/svg<span class="token punctuation">&quot;</span></span>
+        <span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span>
+            <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>M1 1L6.5 6.5L12 1<span class="token punctuation">&quot;</span></span>
+            <span class="token attr-name">stroke</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#979290<span class="token punctuation">&quot;</span></span>
+            <span class="token attr-name">stroke-width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2<span class="token punctuation">&quot;</span></span>
+            <span class="token attr-name">stroke-linecap</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>round<span class="token punctuation">&quot;</span></span>
+            <span class="token attr-name">stroke-linejoin</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>round<span class="token punctuation">&quot;</span></span>
+          <span class="token punctuation">/&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>transition</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>slide-fade<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span>
+        <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>listbox<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">v-show</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>showContent<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">:ref</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">'</span>selCont<span class="token punctuation">'</span><span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">:id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">'</span>sel-cont<span class="token punctuation">'</span> + _uid<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>content<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">:class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>{ right: overflowRight }<span class="token punctuation">&quot;</span></span>
+      <span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>label<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>{{ label }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span>
+          <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>option<span class="token punctuation">&quot;</span></span>
+          <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>select(option)<span class="token punctuation">&quot;</span></span>
+          <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>option in options<span class="token punctuation">&quot;</span></span>
+          <span class="token attr-name">:key</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>option.value<span class="token punctuation">&quot;</span></span>
+          <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>option<span class="token punctuation">&quot;</span></span>
+          <span class="token attr-name">:class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>{ selected: value == option.value }<span class="token punctuation">&quot;</span></span>
+        <span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>em</span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>option.icon<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>icon<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>option.icon<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>em</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>title<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>{{ option.title }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>right<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>radio-outter<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>radio-inner<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>transition</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  name<span class="token operator">:</span> <span class="token string">&quot;single-picker&quot;</span><span class="token punctuation">,</span>
+  props<span class="token operator">:</span> <span class="token punctuation">{</span>
+    defaultValue<span class="token operator">:</span> <span class="token punctuation">{</span>
+      required<span class="token operator">:</span> <span class="token boolean">false</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    required<span class="token operator">:</span> <span class="token punctuation">{</span>
+      required<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token keyword">default</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      type<span class="token operator">:</span> Boolean
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    responsive<span class="token operator">:</span> <span class="token punctuation">{</span>
+      required<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token keyword">default</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      type<span class="token operator">:</span> Boolean
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    value<span class="token operator">:</span> <span class="token punctuation">{</span>
+      required<span class="token operator">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    options<span class="token operator">:</span> <span class="token punctuation">{</span>
+      required<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      type<span class="token operator">:</span> Array
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    label<span class="token operator">:</span> <span class="token punctuation">{</span>
+      type<span class="token operator">:</span> String<span class="token punctuation">,</span>
+      required<span class="token operator">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    color<span class="token operator">:</span> <span class="token punctuation">{</span>
+      required<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      type<span class="token operator">:</span> Object<span class="token punctuation">,</span>
+      <span class="token function-variable function">default</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token punctuation">{</span>
+          main<span class="token operator">:</span> <span class="token string">&quot;#076B9C&quot;</span><span class="token punctuation">,</span>
+          secoundary<span class="token operator">:</span> <span class="token string">&quot;#e6f1f9&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token function-variable function">validator</span><span class="token operator">:</span> <span class="token parameter">val</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> val<span class="token punctuation">.</span>main <span class="token operator">&amp;&amp;</span> val<span class="token punctuation">.</span>secoundary<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  watch<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">value</span><span class="token punctuation">(</span><span class="token parameter">val</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">selectByValue</span><span class="token punctuation">(</span>val<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">mounted</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>value<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">selectByValue</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>required<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">selectByValue</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>defaultVal<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">{</span> value<span class="token operator">:</span> <span class="token keyword">undefined</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">updated</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>
+      document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&quot;sel&quot;</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>_uid<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>offsetTop <span class="token operator">!=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&quot;sel&quot;</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>_uid<span class="token punctuation">)</span><span class="token punctuation">.</span>offsetTop
+    <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>offsetTop <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&quot;sel&quot;</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>_uid<span class="token punctuation">)</span><span class="token punctuation">.</span>offsetTop<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      showContent<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      selected<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+      width<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+      offsetTop<span class="token operator">:</span> <span class="token operator">-</span><span class="token number">1</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  computed<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">isElVisible</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>offsetTop<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">cssProps</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;--single-picker-main-color&quot;</span><span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>color<span class="token punctuation">.</span>main<span class="token punctuation">,</span>
+        <span class="token string">&quot;--single-picker-sec-color&quot;</span><span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>color<span class="token punctuation">.</span>secoundary
+      <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">defaultVal</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>defaultValue <span class="token operator">||</span> <span class="token keyword">this</span><span class="token punctuation">.</span>options<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>value<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">overflowRight</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&quot;#sel&quot;</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>_uid<span class="token punctuation">)</span>
+        <span class="token operator">?</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&quot;#sel&quot;</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>_uid<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getBoundingClientRect</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span>right <span class="token operator">&gt;</span> window<span class="token punctuation">.</span>innerWidth
+        <span class="token operator">:</span> <span class="token keyword">undefined</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">toggleContent</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>showContent<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">hide</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">hide</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>showContent <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+      document<span class="token punctuation">.</span><span class="token function">removeEventListener</span><span class="token punctuation">(</span><span class="token string">&quot;click&quot;</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>listener<span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>showContent <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">.</span>selCont<span class="token punctuation">.</span><span class="token function">focus</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      document<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">&quot;click&quot;</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>listener<span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">select</span><span class="token punctuation">(</span><span class="token parameter">val</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>selected <span class="token operator">=</span> val<span class="token punctuation">;</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">hide</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$emit</span><span class="token punctuation">(</span><span class="token string">&quot;input&quot;</span><span class="token punctuation">,</span> val<span class="token punctuation">.</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">listener</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>e<span class="token punctuation">.</span>target<span class="token punctuation">.</span><span class="token function">closest</span><span class="token punctuation">(</span><span class="token string">&quot;#sel&quot;</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>_uid<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">hide</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>required<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">selectByValue</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>defaultVal<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">{</span> value<span class="token operator">:</span> <span class="token keyword">undefined</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">selectByValue</span><span class="token punctuation">(</span><span class="token parameter">val</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> option <span class="token keyword">in</span> <span class="token keyword">this</span><span class="token punctuation">.</span>options<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>options<span class="token punctuation">[</span>option<span class="token punctuation">]</span><span class="token punctuation">.</span>value <span class="token operator">==</span> val<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>options<span class="token punctuation">[</span>option<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>sass<span class="token punctuation">&quot;</span></span> <span class="token attr-name">scoped</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+$<span class="token property">main-color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--single-picker-main-color<span class="token punctuation">)</span>
+$<span class="token property">sec-color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--single-picker-sec-color<span class="token punctuation">)</span>
+
+.single-picker
+  <span class="token property">display</span><span class="token punctuation">:</span> inline-block
+  <span class="token property">position</span><span class="token punctuation">:</span> relative
+  <span class="token property">max-width</span><span class="token punctuation">:</span> 100%
+
+  &amp;.responsive
+    <span class="token property">width</span><span class="token punctuation">:</span> 100%
+
+    .toggler .title
+      <span class="token property">width</span><span class="token punctuation">:</span> 100%
+
+  .toggler
+    <span class="token property">display</span><span class="token punctuation">:</span> flex
+    <span class="token property">background-color</span><span class="token punctuation">:</span> white
+    <span class="token property">padding</span><span class="token punctuation">:</span> 10px 20px
+    <span class="token property">border</span><span class="token punctuation">:</span> 2px solid <span class="token function">rgba</span><span class="token punctuation">(</span>204<span class="token punctuation">,</span> 203<span class="token punctuation">,</span> 200<span class="token punctuation">,</span> 0.5<span class="token punctuation">)</span>
+    <span class="token property">border-radius</span><span class="token punctuation">:</span> 5px
+    <span class="token property">font-size</span><span class="token punctuation">:</span> 16px
+    <span class="token property">transition</span><span class="token punctuation">:</span> border-color .3s ease-in-out
+    <span class="token property">max-width</span><span class="token punctuation">:</span> 100%
+
+    &amp;<span class="token punctuation">:</span>hover
+      <span class="token property">cursor</span><span class="token punctuation">:</span> pointer
+      <span class="token property">border-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>204<span class="token punctuation">,</span> 203<span class="token punctuation">,</span> 200<span class="token punctuation">,</span> 1<span class="token punctuation">)</span>
+
+    &amp;.active
+      <span class="token property">border-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>204<span class="token punctuation">,</span> 203<span class="token punctuation">,</span> 200<span class="token punctuation">,</span> 1<span class="token punctuation">)</span>
+
+    &amp;.selected
+      <span class="token property">border-color</span><span class="token punctuation">:</span> $main-color
+
+      .title
+        <span class="token property">color</span><span class="token punctuation">:</span> $main-color
+
+      .chevron
+        svg
+          path
+            <span class="token property">stroke</span><span class="token punctuation">:</span> $main-color
+
+    .icon
+      <span class="token property">margin-rigth</span><span class="token punctuation">:</span> 10px
+
+    .title
+      <span class="token property">display</span><span class="token punctuation">:</span> inline-block
+      <span class="token property">font-weight</span><span class="token punctuation">:</span> bold
+      <span class="token property">color</span><span class="token punctuation">:</span> #979290
+      <span class="token property">max-width</span><span class="token punctuation">:</span> 100%
+      <span class="token property">text-overflow</span><span class="token punctuation">:</span> ellipsis
+      <span class="token property">white-space</span><span class="token punctuation">:</span> nowrap
+      <span class="token property">overflow-x</span><span class="token punctuation">:</span> hidden
+
+    .chevron
+      <span class="token property">margin-left</span><span class="token punctuation">:</span> 10px
+      <span class="token property">float</span><span class="token punctuation">:</span> right
+      <span class="token property">transition</span><span class="token punctuation">:</span> 0.2s ease-in-out
+
+      svg
+        <span class="token property">vertical-align</span><span class="token punctuation">:</span> baseline
+
+      &amp;.up
+        <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">rotate</span><span class="token punctuation">(</span>-180deg<span class="token punctuation">)</span>
+
+    .cross
+      <span class="token property">margin-left</span><span class="token punctuation">:</span> 10px
+      <span class="token property">float</span><span class="token punctuation">:</span> right
+
+      svg
+        <span class="token property">vertical-align</span><span class="token punctuation">:</span> baseline
+
+        path
+          <span class="token property">stroke</span><span class="token punctuation">:</span> $main-color
+
+
+
+  .content
+    <span class="token property">position</span><span class="token punctuation">:</span> absolute
+    <span class="token property">margin-top</span><span class="token punctuation">:</span> 10px
+    <span class="token property">background</span><span class="token punctuation">:</span> white
+    <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0px 0px 30px <span class="token function">rgba</span><span class="token punctuation">(</span>129<span class="token punctuation">,</span> 127<span class="token punctuation">,</span> 126<span class="token punctuation">,</span> 0.16<span class="token punctuation">)</span>
+    <span class="token property">border-radius</span><span class="token punctuation">:</span> 5px
+    <span class="token property">white-space</span><span class="token punctuation">:</span> nowrap
+    <span class="token property">z-index</span><span class="token punctuation">:</span> 1
+    <span class="token property">min-width</span><span class="token punctuation">:</span> 200px
+    <span class="token property">max-width</span><span class="token punctuation">:</span> 400px
+
+    &amp;.right
+      <span class="token property">right</span><span class="token punctuation">:</span> 0
+
+    &amp;.invisible
+      <span class="token property">visibility</span><span class="token punctuation">:</span> hidden
+
+    .label
+      <span class="token property">padding</span><span class="token punctuation">:</span> 5px 20px
+      <span class="token property">font-size</span><span class="token punctuation">:</span> 14px
+      <span class="token property">font-weight</span><span class="token punctuation">:</span> bold
+      <span class="token property">color</span><span class="token punctuation">:</span> #979290
+      <span class="token property">width</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span>100% - 40px<span class="token punctuation">)</span>
+      <span class="token property">max-width</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span>100% - 40px<span class="token punctuation">)</span>
+      <span class="token property">overflow</span><span class="token punctuation">:</span> hidden
+      <span class="token property">text-overflow</span><span class="token punctuation">:</span> ellipsis
+
+    .option
+      <span class="token property">display</span><span class="token punctuation">:</span> flex
+      <span class="token property">padding</span><span class="token punctuation">:</span> 10px 20px
+      <span class="token property">font-size</span><span class="token punctuation">:</span> 16px
+      <span class="token property">font-weight</span><span class="token punctuation">:</span> bold
+      <span class="token property">color</span><span class="token punctuation">:</span> #312F2E
+
+      &amp;<span class="token punctuation">:</span>first-child
+        <span class="token property">border-radius</span><span class="token punctuation">:</span> 5px 5px 0 0
+
+      &amp;<span class="token punctuation">:</span>last-child
+        <span class="token property">border-radius</span><span class="token punctuation">:</span> 0 0 5px 5px
+
+      &amp;<span class="token punctuation">:</span>hover
+        <span class="token property">background-color</span><span class="token punctuation">:</span>  $sec-color
+        <span class="token property">cursor</span><span class="token punctuation">:</span> pointer
+
+      &amp;.selected
+        <span class="token property">background-color</span><span class="token punctuation">:</span> $sec-color
+        <span class="token property">color</span><span class="token punctuation">:</span> $main-color
+
+        .right
+          .radio-outter
+            <span class="token property">border-color</span><span class="token punctuation">:</span> $main-color
+
+          .radio-inner
+            <span class="token property">background-color</span><span class="token punctuation">:</span> $main-color
+
+      .title
+        <span class="token property">width</span><span class="token punctuation">:</span> 100%
+        <span class="token property">max-width</span><span class="token punctuation">:</span> 100%
+        <span class="token property">overflow</span><span class="token punctuation">:</span> hidden
+        <span class="token property">text-overflow</span><span class="token punctuation">:</span> ellipsis
+        <span class="token property">white-space</span><span class="token punctuation">:</span> nowrap
+
+      .right
+        <span class="token property">width</span><span class="token punctuation">:</span> 32px
+
+        .radio-outter
+          <span class="token property">height</span><span class="token punctuation">:</span> 14px
+          <span class="token property">width</span><span class="token punctuation">:</span> 14px
+          <span class="token property">margin-left</span><span class="token punctuation">:</span> 10px
+          <span class="token property">border</span><span class="token punctuation">:</span> 1px solid #979290
+          <span class="token property">border-radius</span><span class="token punctuation">:</span> 20px
+          <span class="token property">padding</span><span class="token punctuation">:</span> 3px
+
+          .radio-inner
+            <span class="token property">height</span><span class="token punctuation">:</span> 14px
+            <span class="token property">width</span><span class="token punctuation">:</span> 14px
+            <span class="token property">border-radius</span><span class="token punctuation">:</span> 12px
+
+.slide-fade-enter-active
+  <span class="token property">transition</span><span class="token punctuation">:</span> all .3s ease
+
+.slide-fade-leave-active
+  <span class="token property">transition</span><span class="token punctuation">:</span> all .3s ease
+
+.slide-fade-enter<span class="token punctuation">,</span> .slide-fade-leave-to
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>-30px<span class="token punctuation">)</span>
+  <span class="token property">opacity</span><span class="token punctuation">:</span> 0
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/comparaja/phoenix-vue-library/edit/dev/docs/components/single-picker.md" target="_blank" rel="noopener noreferrer">Help us improve this page!</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">3/29/2021, 12:29:52 PM</span></div></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/phoenix-vue-library/assets/js/app.474aab61.js" defer></script><script src="/phoenix-vue-library/assets/js/2.f2f3b0a2.js" defer></script><script src="/phoenix-vue-library/assets/js/12.c8d79b58.js" defer></script><script src="/phoenix-vue-library/assets/js/3.ac6448c4.js" defer></script><script src="/phoenix-vue-library/assets/js/4.ce52159a.js" defer></script><script src="/phoenix-vue-library/assets/js/8.3a76a952.js" defer></script>
+  </body>
+</html>
