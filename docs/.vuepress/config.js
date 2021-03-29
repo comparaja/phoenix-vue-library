@@ -39,7 +39,7 @@ module.exports = {
             {
               title: 'Components',
               collapsable: false,
-              children: ['dropdown']
+              children: ['single-picker']
             }
           ]
         }
