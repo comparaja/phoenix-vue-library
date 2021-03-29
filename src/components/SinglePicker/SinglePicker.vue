@@ -69,7 +69,6 @@
         :ref="'selCont'"
         :id="'sel-cont' + _uid"
         class="content"
-        :class="{ right: overflowRight }"
       >
         <div class="label">{{ label }}</div>
         <div
@@ -179,12 +178,6 @@ export default {
     },
     defaultVal() {
       return this.defaultValue || this.options[0].value;
-    },
-    overflowRight() {
-      return document.getElementById("#sel" + this._uid)
-        ? document.getElementById("#sel" + this._uid).getBoundingClientRect()
-            .right > window.innerWidth
-        : undefined;
     }
   },
   methods: {
